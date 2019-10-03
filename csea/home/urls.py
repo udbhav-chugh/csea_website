@@ -6,4 +6,5 @@ app_name = 'home'
 
 urlpatterns = [
     path('members/',TemplateView.as_view(template_name='members.html')),
+    path('', TemplateView.as_view(template_name="home.html")),
 ]
