@@ -1,0 +1,376 @@
+{% extends "base.html" %}
+{% block team %}active{% endblock %}
+{% block mycss %}
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.heading {
+font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+font-size: 36px;
+}
+body{
+background: #ffffff
+}
+
+
+#logo {
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  font-size: 150px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+  margin-top: 0px;
+
+}
+
+.column {
+  float: left;
+  
+    /*display: block;*/
+   
+
+}
+
+.containers h2 {
+  font-size: 20px;
+  /*font-weight: bold;*/
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 650px) {
+  .col-lg-3 {
+    width: 100%;
+    display: block;
+
+  }
+}
+
+img {
+  height: 210px;
+  width: 216px;
+  margin-top: 20px;
+    
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2 );
+    width: 260px;
+   height: 400px;
+  margin-bottom: 16px;
+  padding: 0 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+ background: LightGray;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to bottom, #CFDEF3, #E0EAFC);*/   /*Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to bottom, #CFDEF3, #E0EAFC);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius:10px;
+
+}
+
+.containers {
+  padding: 0 16px;
+}
+
+.containers::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.col-lg-3 {
+  padding-bottom: 20px;
+
+
+}
+.upper{
+   /* The image used */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/69217554_2509262245800080_5293587960149573632_o.jpg?_nc_cat=103&_nc_oc=AQmazFDDS0fyC0aQGdfbeLHSf7KEv1NkppgKDV1uHmZ7e4R5GxDw1dj0XjWKkzl4BsQ&_nc_ht=scontent.fdel29-1.fna&oh=fce5d496dbee9e5b9b3f4bc2346f1e10&oe=5E38BDA8");
+  /* Full height */
+  height: 550px;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+        /*    height: 40vh;
+          background-attachment: fixed;
+          background-size: cover;
+          margin-top:0;
+          padding-top:0; */
+}
+.mail{
+ /* display: inline-block;*/
+ /* padding: 8px;*/
+  /*text-align: center;*/
+/*position: absolute;*/
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom:   0px;
+  padding-bottom: 0px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  right: 0px;   
+  margin-right: 26px;
+  margin-left: 26px;
+  bottom:   10px;
+  /*margin-bottom: 0px !important;*/
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.row {
+  padding-bottom: 30px;
+}
+.cent{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+{% endblock %}
+
+{% block main %}
+ <center>
+<div class="upper image"><h1 id="logo">CSEA'19 Team</h1>
+</div>
+<br>
+<div class="col-lg-1"></div>
+<div class="col-lg-10 cent ">
+<div class="row">
+  <div class="col-lg-3 ">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="Jatin Goyal" style="width:100%">
+      <div class="containers">
+        <h2>Jatin Goyal</h2>
+        <p class="title">General Secretary</p>
+      </div>
+      <p class="mail">example@example.com</p>
+      <p><button class="button">Contact</button></p>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="Mike" style="width:100%">
+      <div class="containers">
+        <h2>Apurva N Saraogi</h2>
+        <p class="title">Joint Technical and Events Head</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Mitansh Jain</h2>
+        <p class="title">Joint Technical and Events Head</p>
+       
+        <p>example@example.com</p>
+        
+      </div>
+      <p><button class="button">Contact</button></p>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Shaurya Gomber</h2>
+        <p class="title">Treasurer</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Aman Raj</h2>
+        <p class="title">Technical Executive</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://media.licdn.com/dms/image/C5603AQHyY5OZmqL1Qw/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=JuTo2fkJkz03Cp2U9bcjHNoucMWWNSZrkMYlC0_o5-M" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Manan Gupta</h2>
+        <p class="title">Technical Executive</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Abhishek Jaiswal</h2>
+        <p class="title">Event Executive</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://media.licdn.com/dms/image/C5603AQGzbRy5V8Kx9g/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=xC4BCma48eecBi_PDDSwTPOhvLwtfnXxs2pGnDXbXm4" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Mayank Wadhwani</h2>
+        <p class="title">Event Executive</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Niyati Chaudhary</h2>
+        <p class="title">Technical Coordinator</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://media.licdn.com/dms/image/C5603AQHEE-3tDjdjRA/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=bYTVx6mKoFpkyBx0UdKUkuIdtGvZUK3L3kZ5QS-xELM" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Tejas Khairnar</h2>
+        <p class="title">Technical Coordinator</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/48376223_1236713799819268_8153389348620861440_n.jpg?_nc_cat=103&_nc_oc=AQnDB7EyQynLPC2TkSyrt0sQoKdYl8H-HdV5YMOs9FRRBCjEyKOszgsJLNAVHj_aIyY&_nc_ht=scontent.fdel29-1.fna&oh=2b7bf0860e956503dd9b9c72d41be291&oe=5E21675C" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Harsh Gupta</h2>
+        <p class="title">Event Coordinator</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/53224150_2319889761624936_8350876579160653824_n.jpg?_nc_cat=102&_nc_oc=AQm4JZnBAC7b5bigs76bjx703UErqB1IxhGswsgwCDH4BehuhZurAvEDnYG7LP-MbpI&_nc_ht=scontent.fdel29-1.fna&oh=8092e0a5c49ae820ac46c8e17e6565db&oe=5E2F7CF2" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Sai Sumanth Madicherla</h2>
+        <p class="title">Event Coordinator</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Harshit Gupta</h2>
+        <p class="title">Branch Representative, Batch 2016 - 2020</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Utkarsh Jain</h2>
+        <p class="title">Branch Representative, Batch 2017 - 2021</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/53803590_835979040078364_6644243827714424832_o.jpg?_nc_cat=108&_nc_oc=AQmTMEbj4nhjaitlxR45VX9cZb7IARcQysI86L8hR58eFhmobtUNsKCfxojnVQI5HvQ&_nc_ht=scontent.fdel29-1.fna&oh=9f32071fc774644d36a9f644d9a437fb&oe=5E351D0A" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Saurabh Baranwal</h2>
+        <p class="title">Branch Representative, Batch 2018 - 2022</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUGr-qi-mrZDAMC3Sa0VPSW-GRKxqmBDxEvqSRmGvqXc5nSctT" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Udbhav Chugh</h2>
+        <p class="title">SAIL Representative</p>
+       
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</center>
+{% endblock %}

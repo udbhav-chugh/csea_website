@@ -11,12 +11,15 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-	<link rel="stylesheet" href="{% static 'home/style.css' %}" >
-	
+	<link rel="stylesheet" href="{% static 'css/footer.css' %}" >
+	<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+	{% block mycss %}{% endblock %}
+
 </head>
 <body>
-
+<!--header-->
 <!-- Navigation -->
+<div class="navclass">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 	<div class="container-fluid">
 		<a href="" class="navbar-brand" href="#"><img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t1.15752-9/71388282_708898562909823_4142477991143800832_n.png?_nc_cat=100&_nc_oc=AQnRr6U3vzcFTwA_5H59_5pyeOGzbWpW9sF4onU0cvh4gtAaa2P6OEmMmx5c2lF4Hqo&_nc_ht=scontent.fdel29-1.fna&oh=dc6dce1e64abdae162dd4594dae1f988&oe=5E38AC2A" alt="Computer"></a>
@@ -25,88 +28,33 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
+				<li class="nav-item {% block home %}{% endblock %}">
+					<a class="nav-link" href="/">Home</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Team</a>
+				<li class="nav-item {% block team %}{% endblock %}">
+					<a class="nav-link" href="/members">Team</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="events">Events</a>
+				<li class="nav-item {% block event %}{% endblock %}">
+					<a class="nav-link" href="/events">Events</a>
 				</li>
 				
-				<li class="nav-item">
+				<li class="nav-item {% block calendar %}{% endblock %}">
 					<a class="nav-link" href="#">Event Calender</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 </nav>
-
-<!--- Image Slider -->
-
-<div class="container">
-  <h2>At CSEA</h2>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Carousel indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for carousel items -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/43426711_1880245022041462_8211652401057234944_o.jpg?_nc_cat=102&_nc_oc=AQnvB9dKileUaVwu_fCqDyHmzPp4ekGHyPSFyIZX-FYvkPCViQab8AtCaFGc5scuAjY&_nc_ht=scontent.fdel29-1.fna&oh=a90ecbfd39305d294f1900a30415de24&oe=5E27F03C" alt="First Slide">
-        </div>
-        <div class="carousel-item">
-            <img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/39989111_1826464207419544_6805540371032965120_n.jpg?_nc_cat=107&_nc_oc=AQl4WEJG5OE-N1gRWmqtAl40Dm4_z64CcVyFoLgrogsoh3epDdHOrayHY7hVSySm9io&_nc_ht=scontent.fdel29-1.fna&oh=735a886871002265c1ef56c5b4b8c0c8&oe=5E3BD469" alt="Second Slide">
-        </div>
-        <div class="carousel-item">
-            <img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/39989082_1826463637419601_6340366692429856768_n.jpg?_nc_cat=110&_nc_oc=AQmQV0jlgMuir8o90K841ZPeivUcB1qiAmV4h5r_-Xrr5xXl-TMt9KyS1nUqh7x6OU0&_nc_ht=scontent.fdel29-1.fna&oh=003b6e21c152920cfaaff70a8c52d4d5&oe=5DF17AE9" alt="Third Slide">
-        </div>
-    </div>
-    <!-- Carousel controls -->
-    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-        <i class="fas fa-angle-left"></i>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-        <i class="fas fa-angle-right"></i>
-    </a>
 </div>
-
+<!--header ends-->
+<div class="bg-secondary">
+<!-- main -->
+{% block main %}
+{% endblock %}
+<!-- main ends -->
 </div>
-<!--- Jumbotron -->
-
-
-<!--- Welcome Section -->
-
-
-<!--- Three Column Section -->
-
-
-<!--- Two Column Section -->
-
-
-<!--- Fixed background -->
-
-
-<!--- Emoji Section -->
-
-  
-<!--- Meet the team -->
-
-
-<!--- Cards -->
-
-
-<!--- Two Column Section -->
-
-
-<!--- Connect -->
-&nbsp;
-
 <!--- Footer -->
+<div class="footclass">
 <footer id="footer" class="footer-1">
 <div class="main-footer widgets-dark typo-light">
 <div class="container">
@@ -177,17 +125,9 @@
 </div>
 </div>
 </footer>
-
+</div>
 
 
 </body>
 </html>
-
-
-
-
-
-
-
-
 

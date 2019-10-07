@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block event %}active{% endblock %}
+{% block mycss %}
+<style>
+		@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Lato', sans-serif ;
+    ;
+}
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        text-align: center;
+        margin-bottom: 0px !important;
+      margin-top: 0px !important;
+}
+.image{
+          height: 40vh;
+          background-attachment: fixed;
+          background-size: cover;
+          margin-top:0;
+          padding-top:0;
+}
+.titlebox{
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+}
+.first{
+  text-align: center;
+}
+
+/*CSS FOR HEADING*/
+div.foo{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 8vmax;
+  margin-right: 0em;
+  margin-top: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
+
+	</style>
+{% endblock %}
+
+{% block main %}
+	<div class="first image" style="background-image: url(https://www.growwire.com/Websites/growwire/images/hackathonforsocialgood.jpg);">
+		<div class ="titlebox">
+		<div class="letter" data-letter="E">E</div>
+		<div class="letter" data-letter="v">v</div>
+		<div class="letter" data-letter="e">e</div>
+		<div class="letter" data-letter="n">n</div>
+		<div class="letter" data-letter="t">t</div>
+		<div class="letter" data-letter="s">s</div>
+		</div> 
+	</div>
+
+
+	<div class="cardcontent bg-dark">
+		<div class="card text-white bg-secondary mb-3" style="width: 80%;">
+			<div class="card-header">Event Date</div>
+		  	<div class="card-body">
+			    <h5 class="card-title">CSEA ORIENTATION</h5>
+			    <p class="card-text">Event Summary: Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">For Details >></a>
+		  	</div>
+		</div>
+	</div>
+	<div class="image" style="background-image: url(https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/69162124_944692795873654_1784286155294900224_o.jpg?_nc_cat=108&_nc_oc=AQnonbATtVYurgWAb3WUD9lldL8cPWZjzvmyp1-q-SL_EgBt3qgz5Fj9epUIN0YdAY4&_nc_ht=scontent.fdel29-1.fna&oh=d88adca9d87589f17f708b90f4c4b340&oe=5E399D8A);"></div>
+
+
+
+	<div class="cardcontent bg-dark">
+		<div class="card text-white bg-secondary mb-3" style="width: 80%;">
+			<div class="card-header">Event Date</div>
+		  	<div class="card-body">
+			    <h5 class="card-title">CSEA ORIENTATION</h5>
+			    <p class="card-text">Event Summary: Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">For Details >></a>
+		  	</div>
+		</div>
+	</div>
+	<div class="image" style="background-image: url(https://scontent.fdel29-1.fna.fbcdn.net/v/t31.0-8/16463379_748017918695402_2230121800412214434_o.jpg?_nc_cat=108&_nc_oc=AQnTFy5kXvhC-alhECytXuNqVecsGCG5fcrwaemA_CkHJJ85XkjUTSPOLRFeXCN6fjE&_nc_ht=scontent.fdel29-1.fna&oh=c4b09c317e71cff8f50d38f692e44d3b&oe=5E21D14B);"></div>
+
+
+	<div class="cardcontent bg-dark">
+		<div class="card text-white bg-secondary mb-3" style="width: 80%;">
+			<div class="card-header">Event Date</div>
+		  	<div class="card-body">
+			    <h5 class="card-title">CSEA ORIENTATION</h5>
+			    <p class="card-text">Event Summary: Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">For Details >></a>
+		  	</div>
+		</div>
+	</div>
+	<div class="image" style="background-image: url(https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/69162124_944692795873654_1784286155294900224_o.jpg?_nc_cat=108&_nc_oc=AQnonbATtVYurgWAb3WUD9lldL8cPWZjzvmyp1-q-SL_EgBt3qgz5Fj9epUIN0YdAY4&_nc_ht=scontent.fdel29-1.fna&oh=d88adca9d87589f17f708b90f4c4b340&oe=5E399D8A);"></div> 
+{% endblock %}

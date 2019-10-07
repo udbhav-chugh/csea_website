@@ -1,0 +1,31 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+.footclass{
+	font-family: 'Poppins', sans-serif !important;
+    color: #222;
+}
+ footer {
+  background-color: #343a40;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+[class*="col-"] {
+    padding: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+.social-footer2 {
+  float: left;
+  padding-left: 0px;
+  list-style: none;
+}
+.fa-angle-left{
+  color: black !important;  
+  font-size: 30px; 
+}
+
+.fa-angle-right{
+  color: black !important;  
+  font-size: 30px; 
+}
