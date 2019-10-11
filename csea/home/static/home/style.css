@@ -260,3 +260,50 @@ figure {
   color: black !important;  
   font-size: 30px; 
 }
+
+.navbar-brand {
+  font-size: 30px;
+  margin-left: 100px;
+}
+
+.thumbnail-widget {
+  padding-left: 18px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+
+}
+
+.first-div {
+  margin-top: 20px;
+}
+
+.jumbotron .container {
+  color: rgba(255,255,255,0.8);
+  margin-top: 90px;
+  
+  display: block;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.content-card {
+  border-radius: 8px;
+  height: 200px;
+  text-align: center;
+  padding : 30px;
+}
+
+.content-card .card-title {
+  padding-bottom: 20px;
+}
+
+.card-container {
+  padding-bottom: 20px;
+}
