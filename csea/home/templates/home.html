@@ -12,7 +12,7 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{% static 'home/style.css' %}" >
-	
+
 </head>
 <body>
 
@@ -25,17 +25,17 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
+				<li class="nav-item {% block home %}{% endblock %}">
+					<a class="nav-link" href="/">Home</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Team</a>
+				<li class="nav-item {% block team %}{% endblock %}">
+					<a class="nav-link" href="/members">Team</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="events">Events</a>
+				<li class="nav-item {% block event %}{% endblock %}">
+					<a class="nav-link" href="/events">Events</a>
 				</li>
-				
-				<li class="nav-item">
+
+				<li class="nav-item {% block calendar %}{% endblock %}">
 					<a class="nav-link" href="#">Event Calender</a>
 				</li>
 			</ul>
@@ -46,7 +46,7 @@
 <!--- Image Slider -->
 
 <div class="container">
-  <h2>At CSEA</h2>  
+  <h2>At CSEA</h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Carousel indicators -->
     <ol class="carousel-indicators">
@@ -93,7 +93,7 @@
 
 <!--- Emoji Section -->
 
-  
+
 <!--- Meet the team -->
 
 
@@ -111,7 +111,7 @@
 <div class="main-footer widgets-dark typo-light">
 <div class="container">
 <div class="row">
-  
+
 <div class="col-xs-12 col-sm-6 col-md-4">
 <div class="widget subscribe no-box">
 <h5 class="widget-title">CSEA<span></span></h5>
@@ -124,22 +124,22 @@
 <h5 class="widget-title">Quick Links<span></span></h5>
 <ul class="thumbnail-widget">
 <li>
-<div class="thumb-content"><a href="#.">Home</a></div>	
+<div class="thumb-content"><a href="#.">Home</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="#.">Events</a></div>	
+<div class="thumb-content"><a href="#.">Events</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="#.">Upcoming Events</a></div>	
+<div class="thumb-content"><a href="#.">Upcoming Events</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="#.">Event Calender</a></div>	
+<div class="thumb-content"><a href="#.">Event Calender</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="#.">Team</a></div>	
+<div class="thumb-content"><a href="#.">Team</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="#.">Developers</a></div>	
+<div class="thumb-content"><a href="#.">Developers</a></div>
 </li>
 
 </ul>
@@ -166,7 +166,7 @@
 </div>
 </div>
 </div>
-  
+
 <div class="footer-copyright">
 <div class="container">
 <div class="row">
@@ -182,12 +182,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
