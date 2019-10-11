@@ -7,6 +7,7 @@ app_name = 'home'
 
 urlpatterns = [
     path('', views.index , name='index'),
-    path('members/',TemplateView.as_view(template_name='members.html')),
-    path('calender/',TemplateView.as_view(template_name='calender.html')),
+    path('members/',TemplateView.as_view(template_name='members1.html')),
+    path('calendar/',TemplateView.as_view(template_name='calendar.html')),
+    path('events/',views.events_view),
 ]
