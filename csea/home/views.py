@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Event_Model
 
+
+def index(request):
+	return render(request, 'home.html')
+
 def events_view(request):
 	qs = Event_Model.objects.all()
 	context = {"object_list": qs}
