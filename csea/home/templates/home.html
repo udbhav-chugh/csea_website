@@ -1,53 +1,11 @@
+{% extends "base.html" %}
+{% block mycss %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>CSEA, IITG</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Raleway:300,400,600|Playfair+Display" rel="stylesheet">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-	<link href="{% static 'home/style.css' %}" rel="stylesheet"/>
-	<link href="{% static 'home/video.css' %}" rel="stylesheet"/>
+  <link href="{% static 'home/style.css' %}" rel="stylesheet"/>
+  <link href="{% static 'home/video.css' %}" rel="stylesheet"/>
+{% endblock %}
 
-
-</head>
-<body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-	<div class="container-fluid">
-		<a href="" class="navbar-brand" href="/"><img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t1.15752-9/71388282_708898562909823_4142477991143800832_n.png?_nc_cat=100&_nc_oc=AQnRr6U3vzcFTwA_5H59_5pyeOGzbWpW9sF4onU0cvh4gtAaa2P6OEmMmx5c2lF4Hqo&_nc_ht=scontent.fdel29-1.fna&oh=dc6dce1e64abdae162dd4594dae1f988&oe=5E38AC2A" alt="Computer"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="/">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="events/">Events</a>
-				</li>
-
-				<li class="nav-item">
-					<a class="nav-link" href="calendar/">Event Calender</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/members">Team</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-
-
-
+{% block main %}
 <div class="homepage-hero-module">
     <div class="video-container">
         <div class="filter"></div>
@@ -188,81 +146,4 @@
 
 			</div>
 			<!--- Jumbotron -->
-
-<!--- Footer -->
-<footer id="footer" class="footer-1">
-<div class="main-footer widgets-dark typo-light">
-<div class="container">
-<div class="row">
-
-<div class="col-xs-12 col-sm-6 col-md-4">
-<div class="widget subscribe no-box">
-<h5 class="widget-title">CSEA<span></span></h5>
-<p>The Computer Science and Engineering Association is a student body under the guidance of Professors which works for the welfare of students of CSE department</p>
-</div>
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4">
-<div class="widget no-box">
-<h5 class="widget-title">Quick Links<span></span></h5>
-<ul class="thumbnail-widget">
-<li>
-<div class="thumb-content"><a href="/">Home</a></div>
-</li>
-<li>
-<div class="thumb-content"><a href="/events">Events</a></div>
-</li>
-<li>
-<div class="thumb-content"><a href="/calendar">Event Calender</a></div>
-</li>
-<li>
-<div class="thumb-content"><a href="/members">Team</a></div>
-</li>
-<li>
-<div class="thumb-content"><a href="/developers">Developers</a></div>
-</li>
-<li>
-<div class="thumb-content"><a href="/alumini">Alumini</a></div>
-</li>
-
-
-</ul>
-</div>
-</div>
-
-
-<div class="col-xs-12 col-sm-6 col-md-4">
-
-<div class="widget no-box">
-<h5 class="widget-title">Contact Us<span></span></h5>
-
-<p><a href="mailto:csea@iitg.ac.in" title="glorythemes">csea@iitg.ac.in</a></p>
-<ul class="social-footer2">
-
-<li class=""><a href="https://www.facebook.com/iitgcsea/" target="_blank" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i> &nbsp;CSEA, IIT Guwahati</a></li>
-<li class=""><a href="https://medium.com/@csea.iitg" target="_blank" title="Medium"><i class="fab fa-medium"></i> &nbsp;CSEA IITG</a></li>
-<!-- <li class=""><a href="https://twitter.com" target="_blank" title="Twitter"><img alt="Twitter" width="30" height="30" src=""></a></li>
-<li class=""><a title="instagram" target="_blank" href="https://www.instagram.com/"><img alt="instagram" width="30" height="30" src=""></a></li> -->
-</ul>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-
-<div class="footer-copyright">
-<div class="container">
-<div class="row">
-<div class="col-md-12 text-center">
-<p>Copyright CSEA © 2019. All rights reserved.</p>
-</div>
-</div>
-</div>
-</div>
-</footer>
-
-
-
-</body>
-</html>
+{% endblock %}

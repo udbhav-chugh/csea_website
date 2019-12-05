@@ -11,5 +11,5 @@ urlpatterns = [
     path('calendar/',TemplateView.as_view(template_name='calendar.html')),
     path('events/',views.events_view),
     path('developers/',TemplateView.as_view(template_name='developers.html')),
-    path('alumini/',TemplateView.as_view(template_name='alumini.html')),
+    path('alumni/',TemplateView.as_view(template_name='alumni.html')),
 ]
