@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'phonenumber_field',
+    'crispy_forms',
     'home',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +72,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'csea.wsgi.application'
+AUTH_USER_MODEL = 'users.Alumni'
 
 
 # Database
@@ -130,3 +134,5 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = os.path.join(LOCAL_STATIC_CDN_PATH, 'media')
 MEDIA_URL = '/media/' # django-storages
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

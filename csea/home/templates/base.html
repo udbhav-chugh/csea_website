@@ -52,6 +52,13 @@
 <!--header ends-->
 <div>
 <!-- main -->
+{% if messages %}
+  {% for message in messages %}
+  <div class="alert alert-{{ message.tags }}">
+    {{ message }}
+  </div>
+  {% endfor %}
+{% endif %}
 {% block main %}
 {% endblock %}
 <!-- main ends -->
