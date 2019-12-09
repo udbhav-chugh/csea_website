@@ -9,11 +9,11 @@
     <form method="POST">
       {% csrf_token %}
       <fieldset class="form-group">
-        <legend class="border-bottom mb-4">Log In!!</legend>
+        <legend class="border-bottom mb-4">Log In</legend>
         {{ form|crispy }}
       </fieldset>
       <div class="form-group">
-        <button class="btn btn-outline-info" type="submit">Login</button>
+        <button class="btn btn-outline-info" type="submit" href="{% url 'alumni' %}" >Login</button>
       </div>
     </form>
     <div class="border-top pt-3">

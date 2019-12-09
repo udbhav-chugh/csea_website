@@ -26,7 +26,7 @@ urlpatterns = [
     path('register/', user_views.register, name='register'),
     path('alumni/', user_views.alumni, name='alumni'),
     path('login/', auth_views.LoginView.as_view(template_name="login.html"), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(template_name="logout.html"), name='logout'),
+    path('logout/', user_views.logout, name='logout'),
 ]
 
 if settings.DEBUG:
