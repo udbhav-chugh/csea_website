@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from phonenumber_field.modelfields import PhoneNumberField
 import datetime
+import re
 
 def year_choices():
     return [(r,r) for r in range(1984, datetime.date.today().year)]
@@ -14,6 +15,8 @@ class AlumniAccountManager(BaseUserManager):
     def create_user(self, email, password=None):
         if not email:
             raise ValueError("Users must have an email address")
+        if not re.search(".*@iitg\.ac\.in", email):
+            raise ValueError("Must be an iitg email, example: abc@iitg.ac.in")
 
         user = self.model(
                 email=self.normalize_email(email))
@@ -46,6 +49,7 @@ class Alumni(AbstractBaseUser):
     is_superuser = models.BooleanField(default=False)
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
+    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
 
     graduation_year = models.IntegerField(
             choices=year_choices(), default=current_year)
@@ -59,7 +63,7 @@ class Alumni(AbstractBaseUser):
     objects = AlumniAccountManager()
 
     def __str__(self):
-        return self.email
+        return f'{self.email}'
 
     def has_perm(self, perm, obj=None):
         return self.is_admin

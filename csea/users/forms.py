@@ -30,5 +30,11 @@ class UserRegisterForm(ModelForm):
         model = Alumni
         fields = ['email', 'password1', 'password2', 'first_name', 'last_name',
                 'graduation_year', 'contact_number', 'current_job',
-                'linkedin_url']
+                'linkedin_url', 'image']
         #fields = ['email', 'password1', 'password2', 'first_name']
+
+class UserUpdateForm(ModelForm):
+    class Meta:
+        model = Alumni
+        fields = ['first_name', 'last_name', 'graduation_year', 'contact_number',
+                'current_job', 'linkedin_url', 'image']
