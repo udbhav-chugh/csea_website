@@ -1,11 +1,15 @@
 {% extends "base.html" %}
+{% block mycss %}
+{% load static %}
+  <link href="{% static 'users/style.css' %}" rel="stylesheet"/>
+{% endblock mycss %}
 {% load crispy_forms_tags %}
 {% block main %}
     <div class="content-section">
       <div class="media">
         <img class="rounded-circle account-img" src="{{ user.image.url }}">
         <div class="media-body">
-          <h2 class="account-heading">{{ user.first_name }}</h2>
+          <h2 class="account-heading">{{ user.first_name }} {{user.last_name}}</h2>
           <p class="text-secondary">{{ user.email }}</p>
         </div>
       </div>

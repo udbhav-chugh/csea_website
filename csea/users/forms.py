@@ -1,14 +1,16 @@
-from django.forms import ModelForm
-from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
 from .models import Alumni
-from phonenumber_field.formfields import PhoneNumberField
 from django import forms
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
+from django.forms import ModelForm
+from phonenumber_field.formfields import PhoneNumberField
+
 
 class UserRegisterForm(ModelForm):
 
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
-    password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
+    password2 = forms.CharField(
+        label='Password confirmation', widget=forms.PasswordInput)
 
     def clean_password2(self):
         # Check that the two password entries match
@@ -27,14 +29,15 @@ class UserRegisterForm(ModelForm):
         return user
 
     class Meta:
+        image = forms.ImageField(required=False)
         model = Alumni
         fields = ['email', 'password1', 'password2', 'first_name', 'last_name',
-                'graduation_year', 'contact_number', 'current_job',
-                'linkedin_url', 'image']
-        #fields = ['email', 'password1', 'password2', 'first_name']
+                  'graduation_year', 'contact_number', 'current_job',
+                  'linkedin_url', 'image' ]
+
 
 class UserUpdateForm(ModelForm):
     class Meta:
         model = Alumni
         fields = ['first_name', 'last_name', 'graduation_year', 'contact_number',
-                'current_job', 'linkedin_url', 'image']
+                  'current_job', 'linkedin_url', 'image']

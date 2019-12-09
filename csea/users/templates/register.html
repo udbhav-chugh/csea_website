@@ -1,4 +1,8 @@
 {% extends "base.html" %}
+{% block mycss %}
+{% load static %}
+  <link href="{% static 'users/style.css' %}" rel="stylesheet"/>
+{% endblock mycss %}
 {% load crispy_forms_tags %}
 {% block main %}
   <div class="content-section">
