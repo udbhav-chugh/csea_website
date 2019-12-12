@@ -5,13 +5,15 @@
 {% endblock mycss %}
 {% load crispy_forms_tags %}
 {% block main %}
+<!-- <center> -->
   <div class="content-section">
     <form method="POST">
       {% csrf_token %}
       <fieldset class="form-group">
-        <p>This page is aimed to connect us with all Alumni of CSE Department.</p>
-
-        <legend class="border-bottom mb-4">  Log In</legend>
+        <br>
+        <h1 class="h1">Log In</h1>
+  			<div class="yline"></div>
+        <!-- <p>This page is aimed to connect us with all Alumni of CSE Department.</p> -->
         <p> &nbsp; </p>
         {{ form|crispy }}
       </fieldset>
@@ -25,4 +27,6 @@
       </small>
     </div>
   </div>
+<!-- </center> -->
+<div class="col-xs-12 col-sm-6 col-md-4">
 {% endblock main %}

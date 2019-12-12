@@ -69,7 +69,7 @@ div.foo{
 }
 .letter:before{
   color: #fff;
-  text-shadow: 
+  text-shadow:
     -1px 0px 1px rgba(255,255,255,.8),
     1px 0px 1px rgba(0,0,0,.8);
   z-index: 3;
@@ -117,10 +117,11 @@ div.foo{
 		<div class="letter" data-letter="n">n</div>
 		<div class="letter" data-letter="t">t</div>
 		<div class="letter" data-letter="s">s</div>
-		</div> 
+		</div>
 	</div>
   <div class = "event_final">
         {% for object in object_list %}
+				<br>
         {% include 'event_box.html' with event=object %}
         {% endfor %}
   </div>
