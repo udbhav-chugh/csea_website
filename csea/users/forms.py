@@ -31,13 +31,17 @@ class UserRegisterForm(ModelForm):
     class Meta:
         image = forms.ImageField(required=False)
         model = Alumni
+        labels = {"current_job":
+                 "Current Job and Location"}
         fields = ['email', 'password1', 'password2', 'first_name', 'last_name',
                   'graduation_year', 'contact_number', 'current_job',
-                  'linkedin_url', 'image' ]
+                  'linkedin_url', 'image']
 
 
 class UserUpdateForm(ModelForm):
     class Meta:
         model = Alumni
+        labels = {"current_job":
+                 "Current Job and Location"}
         fields = ['first_name', 'last_name', 'graduation_year', 'contact_number',
                   'current_job', 'linkedin_url', 'image']

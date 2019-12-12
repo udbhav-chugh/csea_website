@@ -5,17 +5,16 @@
 {% endblock mycss %}
 {% load crispy_forms_tags %}
 {% block main %}
-    <div class="content-section">
-      <div class="media">
-        <img class="rounded-circle account-img" src="{{ user.image.url }}">
-        <div class="media-body">
-          <h2 class="account-heading">{{ user.first_name }} {{user.last_name}}</h2>
-          <p class="text-secondary">{{ user.email }}</p>
-        </div>
-      </div>
       <!-- FORM HERE -->
       <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
+        <div class="media">
+        <img class="account-img" src="{{ user.image.url }}">
+        <div class="media-body">
+          <h2 class="alum"> <p>&nbsp;</p>{{user.first_name}} {{user.last_name}} </h2>
+          <p class="em"> {{user.email}} </p>
+        </div>
+      </div>
         <fieldset class="form-group">
         <legend class="border-bottom mb-4">Profile</legend>
           {{ u_form|crispy }}
