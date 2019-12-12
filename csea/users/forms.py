@@ -29,7 +29,7 @@ class UserRegisterForm(ModelForm):
         return user
 
     class Meta:
-        image = forms.ImageField(required=False)
+        image = forms.ImageField()
         model = Alumni
         labels = {"current_job":
                  "Current Job and Location"}
