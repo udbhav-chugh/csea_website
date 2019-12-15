@@ -53,14 +53,13 @@ class Alumni(AbstractBaseUser):
     is_superuser = models.BooleanField(default=False)
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-    image = models.ImageField(default='default.jpg',
-                              upload_to='profile_pics')
+    image = models.ImageField(default = 'default.jpg' , upload_to='profile_pics')
 
     graduation_year = models.IntegerField(
         choices=year_choices(), default=current_year)
-    contact_number = PhoneNumberField()
+    contact_number = PhoneNumberField(blank=True)
     current_job = models.CharField(max_length=100)
-    linkedin_url = models.URLField()
+    linkedin_url = models.URLField(blank=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
