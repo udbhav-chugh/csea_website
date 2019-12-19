@@ -6,5 +6,5 @@ Commands to run:
 
 from root folder (named csea_website), run the following commands:
 
-pip3 install -r requirements.txt
-python3 csea/manage.py runserver
+- pip3 install -r requirements.txt
+- python3 csea/manage.py runserver
