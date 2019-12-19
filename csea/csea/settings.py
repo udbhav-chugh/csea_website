@@ -137,5 +137,5 @@ MEDIA_URL = '/media/' # django-storages
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = 'alumni'
-LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = '/alumni/'
+LOGIN_URL = '/login/'

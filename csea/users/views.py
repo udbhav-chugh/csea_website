@@ -15,7 +15,7 @@ def register(request):
         email = form.cleaned_data.get('email')
         messages.success(
             request, 'Your account has been created! You can now login!')
-        return redirect('login')
+        return redirect('/login/')
     else:
         form = UserRegisterForm()
     return render(request, 'register.html', {'form': form})
@@ -30,7 +30,7 @@ def alumni(request):
         if u_form.is_valid():
             u_form.save()
         messages.success(request, 'Profile updated')
-        return redirect('alumni')
+        return redirect('/alumni/')
     u_form = UserUpdateForm(instance=request.user)
     context = {'u_form': u_form}
     return render(request, 'alumni.html', context)
