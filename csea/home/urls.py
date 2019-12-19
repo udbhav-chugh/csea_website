@@ -6,8 +6,9 @@ app_name = 'home'
 
 urlpatterns = [
     path('', views.index , name='index'),
-    path('members/',TemplateView.as_view(template_name='members1.html')),
-    path('calendar/',TemplateView.as_view(template_name='calendar.html')),
-    path('events/',views.events_view),
-    path('developers/',TemplateView.as_view(template_name='developers.html')),
+    path('cseweb/csea/', views.index , name='index'),
+    path('cseweb/csea/members/',TemplateView.as_view(template_name='members1.html')),
+    path('cseweb/csea/calendar/',TemplateView.as_view(template_name='calendar.html')),
+    path('cseweb/csea/events/',views.events_view),
+    path('cseweb/csea/developers/',TemplateView.as_view(template_name='developers.html')),
 ]
