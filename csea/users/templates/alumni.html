@@ -2,10 +2,19 @@
 {% block mycss %}
 {% load static %}
   <link href="{% static 'users/style.css' %}" rel="stylesheet"/>
+  <style>
+  .backback {
+  background-image: url(/static/home/images/background_alum.jpg);
+  opacity: 0.8;
+  background-size: 100% 100%;
+
+}
+  </style>
 {% endblock mycss %}
 {% load crispy_forms_tags %}
 {% block main %}
       <!-- FORM HERE -->
+      <div class="backback">
       <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="media">
