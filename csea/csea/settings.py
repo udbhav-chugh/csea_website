@@ -26,7 +26,7 @@ SECRET_KEY = '@-_*zlgr5jkf52ik&-4$=13+6*7x7%ml@$gbh)dr2=xt*6)1r5'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['172.16.115.43','192.168.1.4','127.0.0.1']
+ALLOWED_HOSTS = ['172.16.115.43','192.168.1.4','127.0.0.1','172.16.112.203','*']
 
 # Application definition
 
