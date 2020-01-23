@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block mycss %}
 {% load static %}
-  <link href="{% static 'users/style.css' %}" rel="stylesheet"/>
+  <link href="/cseweb/csea{% static 'users/style.css' %}" rel="stylesheet"/>
   <style>
   .backback {
-  background-image: url(/static/home/images/background_alum.jpg);
+  background-image: url(/cseweb/csea/static/home/images/background_alum.jpg);
   opacity: 0.8;
   background-size: 100% 100%;
 
@@ -27,7 +27,7 @@
     </form>
     <div class="border-top pt-3">
       <div class="text-muted">
-        Already Have An Account? <a class="ml-2" href="/login/">Sign In</a>
+        Already Have An Account? <a class="ml-2" href="/cseweb/csea/login/">Sign In</a>
       </div>
     </div>
   </div>

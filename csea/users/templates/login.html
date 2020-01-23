@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block mycss %}
 {% load static %}
-  <link href="{% static 'users/style.css' %}" rel="stylesheet"/>
+  <link href="/cseweb/csea{% static 'users/style.css' %}" rel="stylesheet"/>
   <style>
   .letter{
     display: inline-block;
@@ -62,7 +62,7 @@
       skew(0deg,22deg);
   }
   .backback {
-  background-image: url(/static/home/images/Alumni.jpg);
+  background-image: url(/cseweb/csea/static/home/images/Alumni.jpg);
   opacity: 0.8;
 }
   </style>
@@ -73,7 +73,7 @@
 {% block main %}
 <!-- <center> -->
 <div class="backback">
-<!-- <div class="first image1" style="background-image: url(/static/home/images/Alumni.jpg)"> -->
+<!-- <div class="first image1" style="background-image: url(/cseweb/csea/static/home/images/Alumni.jpg)"> -->
   <div class="content-section">
     <form method="POST">
       {% csrf_token %}
@@ -97,7 +97,7 @@
     </form>
     <div class="border-top pt-3">
       <div class="text-muted">
-        Need An Account? <a class="ml-2" href="/register/">Sign Up Now</a>
+        Need An Account? <a class="ml-2" href="/cseweb/csea/register/">Sign Up Now</a>
       </div>
     </div>
   </div>
