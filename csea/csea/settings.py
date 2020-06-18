@@ -120,7 +120,7 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/cseweb/csea/static-files/
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
 
@@ -137,5 +137,5 @@ MEDIA_URL = '/media/' # django-storages
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = '/cseweb/csea/alumni/'
-LOGIN_URL = '/cseweb/csea/login/'
+LOGIN_REDIRECT_URL = '/alumni/'
+LOGIN_URL = '/login/'

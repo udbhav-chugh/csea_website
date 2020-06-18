@@ -11,8 +11,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/cseweb/csea{% static 'css/footer.css' %}" >
-	<link rel="stylesheet" type="text/css" href="/cseweb/csea{% static 'css/navbar.css' %}">
+	<link rel="stylesheet" href="{% static 'css/footer.css' %}" >
+	<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
 	{% block mycss %}{% endblock %}
 
 </head>
@@ -22,31 +22,31 @@
 <div class="navclass">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="/cseweb/csea/"><img src="/cseweb/csea/static/home/images/logo.png" alt="Computer"></a>
+		<a class="navbar-brand" href="/"><img src="/static/home/images/logo.png" alt="Computer"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item {% block home %}{% endblock %}">
-					<a class="nav-link" href="/cseweb/csea/">Home</a>
+					<a class="nav-link" href="/">Home</a>
 				</li>
 				<li class="nav-item {% block event %}{% endblock %}">
-					<a class="nav-link" href="/cseweb/csea/events/">Events</a>
+					<a class="nav-link" href="/events/">Events</a>
 				</li>
 
 				<li class="nav-item {% block calendar %}{% endblock %}">
-					<a class="nav-link" href="/cseweb/csea/calendar/">Event Calender</a>
+					<a class="nav-link" href="/calendar/">Event Calender</a>
 				</li>
 				<li class="nav-item {% block team %}{% endblock %}">
-					<a class="nav-link" href="/cseweb/csea/members/">Team</a>
+					<a class="nav-link" href="/members/">Team</a>
 				</li>
 				<li class="nav-item {% block alumni %}{% endblock %}">
-					<a class="nav-link" href="/cseweb/csea/alumni/">Alumni</a>
+					<a class="nav-link" href="/alumni/">Alumni</a>
 				</li>
         {% if user.is_authenticated %}
 				<li class="nav-item {% block logout %}{% endblock %}">
-					<a class="nav-link" href="/cseweb/csea/logout/">Logout</a>
+					<a class="nav-link" href="/logout/">Logout</a>
 				</li>
         {% endif %}
 			</ul>
@@ -87,22 +87,22 @@
 <h5 class="widget-title">Quick Links<span></span></h5>
 <ul class="thumbnail-widget">
 <li>
-<div class="thumb-content"><a href="/cseweb/csea/">Home</a></div>
+<div class="thumb-content"><a href="/">Home</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="/cseweb/csea/events/">Events</a></div>
+<div class="thumb-content"><a href="/events/">Events</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="/cseweb/csea/calendar/">Event Calender</a></div>
+<div class="thumb-content"><a href="/calendar/">Event Calender</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="/cseweb/csea/members/">Team</a></div>
+<div class="thumb-content"><a href="/members/">Team</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="/cseweb/csea/developers/">Developers</a></div>
+<div class="thumb-content"><a href="/developers/">Developers</a></div>
 </li>
 <li>
-<div class="thumb-content"><a href="/cseweb/csea/alumni/">Alumni</a></div>
+<div class="thumb-content"><a href="/alumni/">Alumni</a></div>
 </li>
 </ul>
 </div>

@@ -165,22 +165,22 @@
 }
 
 .playButton {
-  background-image: url(chrome://global/skin/cseweb/csea/media/pauseButton.svg);
+  background-image: url(chrome://global/skin/media/pauseButton.svg);
 }
 .playButton[paused] {
-  background-image: url(chrome://global/skin/cseweb/csea/media/playButton.svg);
+  background-image: url(chrome://global/skin/media/playButton.svg);
 }
 
 .muteButton {
-  background-image: url(chrome://global/skin/cseweb/csea/media/audioUnmutedButton.svg);
+  background-image: url(chrome://global/skin/media/audioUnmutedButton.svg);
 }
 .muteButton[muted] {
-  background-image: url(chrome://global/skin/cseweb/csea/media/audioMutedButton.svg);
+  background-image: url(chrome://global/skin/media/audioMutedButton.svg);
 }
 .muteButton[noAudio],
 .muteButton[noAudio]:hover,
 .muteButton[noAudio]:hover:active {
-  background-image: url(chrome://global/skin/cseweb/csea/media/audioNoAudioButton.svg);
+  background-image: url(chrome://global/skin/media/audioNoAudioButton.svg);
   fill: white;
 }
 .muteButton[noAudio] + .volumeStack {
@@ -188,25 +188,25 @@
 }
 
 .castingButton {
-  background-image: url(chrome://global/skin/cseweb/csea/media/castingButton-ready.svg);
+  background-image: url(chrome://global/skin/media/castingButton-ready.svg);
 }
 
 .castingButton[enabled] {
-  background-image: url(chrome://global/skin/cseweb/csea/media/castingButton-active.svg);
+  background-image: url(chrome://global/skin/media/castingButton-active.svg);
 }
 
 .closedCaptionButton {
-  background-image: url(chrome://global/skin/cseweb/csea/media/closedCaptionButton-cc-off.svg);
+  background-image: url(chrome://global/skin/media/closedCaptionButton-cc-off.svg);
 }
 .closedCaptionButton[enabled] {
-  background-image: url(chrome://global/skin/cseweb/csea/media/closedCaptionButton-cc-on.svg);
+  background-image: url(chrome://global/skin/media/closedCaptionButton-cc-on.svg);
 }
 
 .fullscreenButton {
-  background-image: url(chrome://global/skin/cseweb/csea/media/fullscreenEnterButton.svg);
+  background-image: url(chrome://global/skin/media/fullscreenEnterButton.svg);
 }
 .fullscreenButton[fullscreened] {
-  background-image: url(chrome://global/skin/cseweb/csea/media/fullscreenExitButton.svg);
+  background-image: url(chrome://global/skin/media/fullscreenExitButton.svg);
 }
 
 .controlBarSpacer {
@@ -404,11 +404,11 @@
 
 /* Not showing the throbber on mobile because of conflict with m.youtube.com (see bug 1289412) */
 .controlsContainer:not(.mobile) .statusIcon[type="throbber"] {
-  background: url(chrome://global/skin/cseweb/csea/media/throbber.png) no-repeat center;
+  background: url(chrome://global/skin/media/throbber.png) no-repeat center;
 }
 
 .controlsContainer:not(.mobile) .statusIcon[type="throbber"][stalled] {
-  background: url(chrome://global/skin/cseweb/csea/media/stalled.png) no-repeat center;
+  background: url(chrome://global/skin/media/stalled.png) no-repeat center;
 }
 
 .statusIcon[type="error"],
@@ -421,13 +421,13 @@
 .statusIcon[type="error"] {
   min-width: 70px;
   min-height: 60px;
-  background-image: url(chrome://global/skin/cseweb/csea/media/error.png);
+  background-image: url(chrome://global/skin/media/error.png);
 }
 
 .statusIcon[type="pictureInPicture"] {
   min-width: 84px;
   min-height: 84px;
-  background-image: url(chrome://global/skin/cseweb/csea/media/pictureinpicture.svg);
+  background-image: url(chrome://global/skin/media/pictureinpicture.svg);
   -moz-context-properties: fill, stroke;
   fill: #fff;
   stroke: #fff;
@@ -452,7 +452,7 @@
 
 .pictureInPictureToggleIcon {
   display: inline-block;
-  background-image: url(chrome://global/skin/cseweb/csea/media/pictureinpicture.svg);
+  background-image: url(chrome://global/skin/media/pictureinpicture.svg);
   background-position: center left;
   background-repeat: no-repeat;
   -moz-context-properties: fill, stroke;
@@ -491,7 +491,7 @@
   min-width: var(--clickToPlay-size);
   min-height: var(--clickToPlay-size);
   border-radius: 50%;
-  background-image: url(chrome://global/skin/cseweb/csea/media/playButton.svg);
+  background-image: url(chrome://global/skin/media/playButton.svg);
   background-repeat: no-repeat;
   background-position: 54% 50%;
   background-size: 40% 40%;
