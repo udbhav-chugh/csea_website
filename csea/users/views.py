@@ -9,7 +9,7 @@ from django.contrib import auth
 
 def register(request):
     if request.method == 'POST':
-      form = UserRegisterForm(request.POST)
+      form = UserRegisterForm(request.POST, request.FILES)
       if form.is_valid():
         form.save()
         email = form.cleaned_data.get('email')
